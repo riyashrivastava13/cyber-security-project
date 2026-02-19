@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Security Password Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Cyber Security Password Lab</h1>
+
+    <form method="POST">
+        <input type="text" name="password" placeholder="Enter Password" required>
+        <button type="submit">Analyze Security</button>
+    </form>
+
+    {% if result %}
+        <h2>Password Strength: {{ result }}</h2>
+    {% endif %}
+
+    {% if hash_value %}
+        <h3>SHA-256 Hash:</h3>
+        <p class="hash">{{ hash_value }}</p>
+    {% endif %}
+
+    {% if attack_result %}
+        <h3>Attack Simulation Result:</h3>
+        <p class="attack">{{ attack_result }}</p>
+    {% endif %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    background: #1e293b;
+    padding: 40px;
+    width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #38bdf8;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.hash {
+    background: black;
+    padding: 15px;
+    margin-top: 10px;
+    word-wrap: break-word;
+    border-radius: 5px;
+    color: #22c55e;
+    font-size: 14px;
+}
+
+.attack {
+    margin-top: 15px;
+    padding: 10px;
+    background: #111827;
+    border-left: 4px solid red;
+    color: #f87171;
+}
